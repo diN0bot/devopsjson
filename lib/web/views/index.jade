@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  .container-fluid
+    .row-fluid
+      .span12
+        if valid_text
+          p #{valid_text}
+        form(class="form-horizontal", method="POST", action="/")
+          fieldset
+            legend JSON Validator
+            div.control-group
+              label.control-label JSON Input
+              div.controls
+                textarea(class="span8", name="json_text")
+                p(class="help-block") Enter the JSON text you wish to validate here.
+            div.form-actions
+              button(class="btn btn-primary", type="submit") Validate
+
+    script(src='/static/jquery/jquery-1.7.1.min.js')
+    script(src='/static/bootstrap/js/bootstrap.min.js')
