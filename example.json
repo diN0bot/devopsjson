@@ -59,10 +59,11 @@
     "current_version": "",
     "last_deployed": "1329538942"},
 
-  "related_apis": {
-    "pager_duty": {
-        "url": "",
-        "apikey": ""},
+"related_apis": {
+   "pager_duty": {
+       "subdomain": "example",
+       "schedule_id": "AABBCCD",
+       "auth": "user:pass"},
     "new_relic": {
         "url": "",
         "apikey": ""}},
