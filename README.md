@@ -12,7 +12,7 @@ The vision of this project is to:
 - Provide a [DevOps Dashboard](/racker/gutsy) cloneable app that bootstraps on top of the DevOps JSON spec.
 - Encourage developers everywhere to implement this spec and build additional services and apps on top.
 
-## Why you should care
+## Why you might care
 
 ### Access
 
