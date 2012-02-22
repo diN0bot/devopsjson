@@ -26,7 +26,7 @@ potentially read-only access to related services such as [PagerDuty on-call sche
 
 Standard API for aggregating information across services.
 
-For example, one might build a dashboard that graphs the dependent service relationships among services, as well as 
+For example, one might build a dashboard that graphs dependencies between services, as well as 
 pulls in monitoring information, so that the consequences of operational problems across the network are apparent.
 
 ### Bootstrapping and Automation
