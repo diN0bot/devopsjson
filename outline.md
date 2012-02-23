@@ -153,6 +153,7 @@ Useful Examples:
           "subdomain": "example",
           "schedule_id": "AABBCCD", 
           "auth": "user:pass"
+        }
     },
 ````
 
