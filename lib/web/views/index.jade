@@ -21,14 +21,14 @@ block content
               button(class="btn btn-primary", type="submit") Validate
 
         if report
-          div.page-header
-            h2 Validation Report
           if report.errors.length === 0
             div.alert.alert-success 
+              a(class="close", data-dismiss="alert", href="#") &times;
               strong Success!
               p Your JSON is valid
           else
             div.alert.alert-error
+              a(class="close", data-dismiss="alert", href="#") &times;
               strong Failure!
               p Your JSON is invalid
               each error, i in report.errors
@@ -41,6 +41,3 @@ block content
               ul
               each val, key in report.validated
                 li #{key}: #{val}
-
-    script(src='/static/jquery/jquery-1.7.1.min.js')
-    script(src='/static/bootstrap/js/bootstrap.min.js')
