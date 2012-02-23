@@ -1,12 +1,14 @@
-#  File Format
+# devops.json Outline 
+
+###  File Format
 
 JSON
 
-## Filename
+### Filename
 
 /devops.json
 
-# Information Provided
+## Information Provided
 
 ### Name and Description
 Should be formatted for display.
@@ -77,6 +79,7 @@ Members' "name" and "sso" are required.
 Key can be anything, will be URL anchor text. Value must be a URL.
 
 Useful Examples:
+
  * Docs
  * Dashboard
  * Code
@@ -138,6 +141,7 @@ Useful Examples:
 ````
 
 ### Related APIs
+
  * PagerDuty
  * NewRelic
  * Cloud Monitoring
@@ -152,6 +156,7 @@ Useful Examples:
 ````
 
 ### Dependent Services
+
  * Opaque Strings, or, ideally links to a devops.json
  * Auth
  * Usage
@@ -164,7 +169,8 @@ Useful Examples:
         "http://usage.api.example.com/devops.json"
     ],
 ````
-# KPI JSON spec
+### KPI JSON spec
+
  * Actual values
  * URLs to get actual values (New Relic API url, but lists keys to use against it?)
 
