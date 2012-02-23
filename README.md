@@ -1,8 +1,10 @@
 # DevOps JSON
 
-See also [http://devopsjson.com](http://devopsjson.com)
-
 DevOps JSON defines a [well-known URI](http://tools.ietf.org/html/rfc5785) for DevOps information.
+
+[outline.md](https://github.com/racker/devopsjson/blob/master/outline.md) contains the specification itself.
+
+See also [http://devopsjson.com](http://devopsjson.com)
 
 The vision of this project is to:
 
