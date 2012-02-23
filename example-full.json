@@ -13,8 +13,8 @@
       "members": [
         {
           "name":"Weee Beeblebrox",
-          "github":"http://github.com/foobar",
           "sso":"weee.Beeblebrox",
+          "github":"http://github.com/foobar",
           "mailto":"foobar@example.com",
           "ircnick":"zfoobar",
           "callto":"foobar",
@@ -22,8 +22,8 @@
         },
         {
           "name":"Englebert Humpledink",
-          "github":"http://github.com/bert",
           "sso":"englebert.humpledink",
+          "github":"http://github.com/bert",
           "mailto":"bert@example.com",
           "ircnick":"berty",
           "callto":"berty",
@@ -40,15 +40,14 @@
         }, 
         {
           "name": "Ford Prefect",
-          "github":"http://github.com/bafd",
           "sso":"ford.prefect",
+          "github":"http://github.com/bafd",
           "mailto":"ford.prefect@example.com",
           "ircnick":"ford"
         }
       ]
     }
   ],
-  },
   "links": {
     "code": "https://github.example.com/gutsy/gutsy",
     "docs": "https://github.example.com/gutsy/gutsy/wiki",
