@@ -25,8 +25,18 @@ html(lang='en')
     .navbar.navbar-fixed-top
       .navbar-inner
         .container-fluid
-          a.brand(href='#') JSON Validator
-
+          a.btn.btn-navbar(data-toggle='collapse', data-target='.nav-collapse') 
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.brand(href='/') JSON Validator
+          .nav-collapse
+            ul.nav
+              li.active
+                a(href='/') Home
+              li
+                a(href='schema') Schema
+ 
     block content
 
     script(src='/static/jquery/jquery-1.7.1.min.js')
