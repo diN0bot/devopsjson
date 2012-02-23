@@ -2,26 +2,19 @@
 
 JSON
 
-## URL
-
-
+## Filename
 
 /devops.json
 
-## Auth
-
-FIGURE IT OUT
-
-* htpassword or IP based restrictions are recommended.
-
 # Information Provided
 
-* Product Info / Description
- * What is it built in
+### Name and Description
+Should be formatted for display.
+Tags are for Search Engine Optimization
  
 ````
-  "name": "gutsy",
-  "description": "Rackspace dashboard JSON interpreter",
+  "name": "Gutsy",
+  "description": "Devops JSON Dashboard",
   "tags": [
     "javascript",
     "express",
@@ -30,41 +23,60 @@ FIGURE IT OUT
   ],
 ````
 
-* Pager Rotation ?
-  * Ideally pagerduty api keys :(
+### Contacts
 
-* Related People
- * Dev Team
- * Operations Team
- * Support Team
- * Product Team
- * Security Team
-
+"Teamname" required
+Teams cannot be empty (must have at least one member)
+Members' "name" and "sso" are required.
 
 ````
-    "contacts": {
-        "devs": [{
-            "name":"Weee Beeblebrox", (required)
-            "github":"http://github.com/foobar",
-            "sso":"weee.Beeblebrox",
-            "mailto":"foobar@example.com",
-            "ircnick":"zfoobar",
-            "callto":"foobar",
-            "tel":"+1.555.555.5555"},
-            {
-            "name": "Ford Prefect",
-            "github":"http://github.com/bafd",
-            "sso":"ford.prefect",
-            "mailto":"ford.prefect@example.com",
-            "ircnick":"ford"
-            }],
-        "ops": [{
-            "name": "Zaphod Beeblebrox",
-            "sso": "zaphod.beeblebrox"
-          }, 
+  "contacts": [
+    {
+      "team_name": "Developers",
+      "members": [
+        {
+          "name":"Weee Beeblebrox",
+          "github":"http://github.com/foobar",
+          "sso":"weee.Beeblebrox",
+          "mailto":"foobar@example.com",
+          "ircnick":"zfoobar",
+          "callto":"foobar",
+          "tel":"+1.555.555.5555"
+        },
+        {
+          "name":"Englebert Humpledink",
+          "github":"http://github.com/bert",
+          "sso":"englebert.humpledink",
+          "mailto":"bert@example.com",
+          "ircnick":"berty",
+          "callto":"berty",
+          "tel":"+1.555.555.1234"
+        }
+      ]
+    },
+    {
+      "team_name": "Operations",
+      "members": [
+        {
+          "name": "Zaphod Beeblebrox",
+          "sso": "zaphod.beeblebrox"
+        }, 
+        {
+          "name": "Ford Prefect",
+          "github":"http://github.com/bafd",
+          "sso":"ford.prefect",
+          "mailto":"ford.prefect@example.com",
+          "ircnick":"ford"
+        }
+      ]
     }
-````   
-* Links
+  ],
+````
+
+### Links
+Key can be anything, will be URL anchor text. Value must be a URL.
+
+Useful Examples:
  * Docs
  * Dashboard
  * Code
@@ -89,57 +101,58 @@ FIGURE IT OUT
         "chat": "irc://irc.freenode.net:4443/gutsy-dev?4thestars"},
 ````
 
-* Metadata
- * Current Version
- * Change Date? Changelog of API
-  * Last deployed date?
+### Metadata
+ * Current Version of this JSON file
+ * date deployed : Changedate of JSON File (POSIX time format)
 
 ````
     "metadata": {
-        "current_version": "",
-        "last_deployed": "1329538942"
+        "current_version": "1",
+        "date_deployed": 1329538942
     },
 ````
 
-* Environments
- * URLs to Production, Staging, `devops.json`
- * Regions
-  * URLs to US, UK, etc
-
+### Environments
+ * Production, Staging, etc
+ * Platform
+ * Regions to which the environment is deployed 
+ * URL to Environment
+  * Auth is optional, but highly recommended!
+ 
 ````
-    "environments": [{
-        "type": "staging",
-        "platforms": ["Ubuntu 10.4"],
-        "url": {
-          "url": "https://gutsy.example.com",
-          "auth": {
-            "type": "basic",
-            "username": "gutsy",
-            "password": ""}},
-        "regions": []
-    }],
-````    
+  "environments": [
+    {
+      "type": "Staging",
+      "platforms": ["Ubuntu 10.4"],
+      "regions": ["DAT","OMG"],
+      "url": {
+        "url": "https://staging.example.com",
+        "auth": {
+          "type": "basic",
+          "username": "gutsy",
+          "password": "PASS"
+        }
+      } 
+    }
+  ],
+````
 
-* Related APIs
- * PagerDuty?
+### Related APIs
+ * PagerDuty
  * NewRelic
  * Cloud Monitoring
-  * add into read only user api keys
- * KPI.json SEE OTHER SPEC
 
 ````
     "related_apis": {
         "pager_duty": {
-            "url": "",
-            "apikey": ""},
-        "new_relic": {
-            "url": "",
-            "apikey": ""}
+          "subdomain": "example",
+          "schedule_id": "AABBCCD", 
+          "auth": "user:pass"
     },
 ````
 
-* Dependent Services
- * Opaque Strings, or, ideally links to a opsinfo.json
+### Dependent Services
+ * Opaque Strings, or, ideally links to a devops.json
  * Auth
  * Usage
  * If you depend on cloud servers, etc
@@ -148,9 +161,14 @@ FIGURE IT OUT
     "dependent_services": [
         "http://foo.api.example.com/devops.json",
         "http://auth.api.example.com/devops.json",
-        "http://usage.api.example.com/devops.json"],
+        "http://usage.api.example.com/devops.json"
+    ],
 ````
 # KPI JSON spec
+ * Actual values
+ * URLs to get actual values (New Relic API url, but lists keys to use against it?)
 
-* Actual values
-* URLs to get actual values (New Relic API url, but lists keys to use against it?)
+````
+ "kpi_spec": "http://beta.example.com/kpi.json"
+````
+

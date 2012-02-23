@@ -7,54 +7,58 @@
     "nodejs",
     "cloud"
   ],
-  "contacts": {
-    "Developers": [
-      {
-        "name":"Weee Beeblebrox",
-        "github":"http://github.com/foobar",
-        "sso":"weee.Beeblebrox",
-        "mailto":"foobar@example.com",
-        "ircnick":"zfoobar",
-        "callto":"foobar",
-        "tel":"+1.555.555.5555"
-      },
-      {
-        "name":"Englebert Humpledink",
-        "github":"http://github.com/bert",
-        "sso":"englebert.humpledink",
-        "mailto":"bert@example.com",
-        "ircnick":"berty",
-        "callto":"berty",
-        "tel":"+1.555.555.1234"
-      }
-    ],
-    "Operations": [
-      {
-        "name": "Zaphod Beeblebrox",
-        "sso": "zaphod.beeblebrox"
-      }, 
-      {
-        "name": "Ford Prefect",
-        "github":"http://github.com/bafd",
-        "sso":"ford.prefect",
-        "mailto":"ford.prefect@example.com",
-        "ircnick":"ford"
-      }
-    ],
-    "Support": [],
-    "Product": [],
-    "Security": []
+  "contacts": [
+    {
+      "team_name": "Developers",
+      "members": [
+        {
+          "name":"Weee Beeblebrox",
+          "github":"http://github.com/foobar",
+          "sso":"weee.Beeblebrox",
+          "mailto":"foobar@example.com",
+          "ircnick":"zfoobar",
+          "callto":"foobar",
+          "tel":"+1.555.555.5555"
+        },
+        {
+          "name":"Englebert Humpledink",
+          "github":"http://github.com/bert",
+          "sso":"englebert.humpledink",
+          "mailto":"bert@example.com",
+          "ircnick":"berty",
+          "callto":"berty",
+          "tel":"+1.555.555.1234"
+        }
+      ]
+    },
+    {
+      "team_name": "Operations",
+      "members": [
+        {
+          "name": "Zaphod Beeblebrox",
+          "sso": "zaphod.beeblebrox"
+        }, 
+        {
+          "name": "Ford Prefect",
+          "github":"http://github.com/bafd",
+          "sso":"ford.prefect",
+          "mailto":"ford.prefect@example.com",
+          "ircnick":"ford"
+        }
+      ]
+    }
+  ],
   },
   "links": {
     "code": "https://github.example.com/gutsy/gutsy",
     "docs": "https://github.example.com/gutsy/gutsy/wiki",
     "dashboard": "https://gutsy.dev.io",
-    "monitoring": "https://cloudkick.com",
-    "ticketing": "https://v1.k1k.me",
-    "continuous_integration": "https://gutsy-bb.k1k.me",
-    "continuous_deployment": "https://gutsy-dreadnot.k1k.me",
-    "logging": "https://gutsy-log.k1k.me",
-    "chat": "irc://irc.freenode.net:4443/gutsy-dev?PASSWORD"
+    "monitoring": "https://cloudkick.com/a/gutsy",
+    "ticketing": "https://zendesk.example.com",
+    "continuous_integration": "https://gutsy-bb.example.com",
+    "continuous_deployment": "https://gutsy-dreadnot.example.com",
+    "logging": "https://gutsy-log.example.com",
+    "chat": "irc://irc.server.net:4443/roomname?PASSWORD"
   },
   "environments": [
     {
@@ -62,7 +66,7 @@
       "platforms": ["Ubuntu 10.4"],
       "regions": ["DAT","OMG"],
       "url": {
-        "url": "https://staging.gutsy.com",
+        "url": "https://staging.example.com",
         "auth": {
           "type": "basic",
           "username": "gutsy",
@@ -75,7 +79,7 @@
       "platforms": ["Ubuntu 10.4"],
       "regions": ["OMG","NOWAI"],
       "url": {
-        "url": "https://production.gusty.com",
+        "url": "https://production.example.com",
         "auth": {
           "type": "basic",
           "username": "gutsy",
@@ -85,8 +89,8 @@
     }
   ],
   "metadata": {
-    "current_version": "",
-    "last_deployed": "1329538942"
+    "current_version": "1",
+    "date_deployed": 1330034242
   },
   "related_apis": {
     "pager_duty": {
