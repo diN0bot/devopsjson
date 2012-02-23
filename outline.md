@@ -38,8 +38,8 @@ Members' "name" and "sso" are required.
       "members": [
         {
           "name":"Weee Beeblebrox",
-          "github":"http://github.com/foobar",
           "sso":"weee.Beeblebrox",
+          "github":"http://github.com/foobar",
           "mailto":"foobar@example.com",
           "ircnick":"zfoobar",
           "callto":"foobar",
@@ -47,8 +47,8 @@ Members' "name" and "sso" are required.
         },
         {
           "name":"Englebert Humpledink",
-          "github":"http://github.com/bert",
           "sso":"englebert.humpledink",
+          "github":"http://github.com/bert",
           "mailto":"bert@example.com",
           "ircnick":"berty",
           "callto":"berty",
@@ -65,8 +65,8 @@ Members' "name" and "sso" are required.
         }, 
         {
           "name": "Ford Prefect",
-          "github":"http://github.com/bafd",
           "sso":"ford.prefect",
+          "github":"http://github.com/bafd",
           "mailto":"ford.prefect@example.com",
           "ircnick":"ford"
         }
@@ -91,17 +91,18 @@ Useful Examples:
  * IRC / Chat (http://tools.ietf.org/html/rfc5785)
 
 ````
-    "links": {
-        "code": "https://github.example.com/gutsy/gutsy",
-        "docs": "https://github.example.com/gutsy/gutsy/wiki",
-        "dashboard": "https://gutsy.dev.io",
-        "code": "https://github.example.com/gutsy/gutsy",
-        "monitoring": "https://cloudkick.com",
-        "ticketing": "https://v1.k1k.me",
-        "continuous_integration": "https://gutsy-bb.k1k.me",
-        "continuous_deployment": "https://gutsy-dreadnot.k1k.me",
-        "logging": "https://gutsy-log.k1k.me",
-        "chat": "irc://irc.freenode.net:4443/gutsy-dev?4thestars"},
+  "links": {
+      "code": "https://github.example.com/gutsy/gutsy",
+      "docs": "https://github.example.com/gutsy/gutsy/wiki",
+      "dashboard": "https://gutsy.dev.io",
+      "code": "https://github.example.com/gutsy/gutsy",
+      "monitoring": "https://cloudkick.com",
+      "ticketing": "https://v1.k1k.me",
+      "continuous_integration": "https://gutsy-bb.k1k.me",
+      "continuous_deployment": "https://gutsy-dreadnot.k1k.me",
+      "logging": "https://gutsy-log.k1k.me",
+      "chat": "irc://irc.freenode.net:4443/gutsy-dev?4thestars"
+  },
 ````
 
 ### Metadata
@@ -109,10 +110,10 @@ Useful Examples:
  * date deployed : Changedate of JSON File (POSIX time format)
 
 ````
-    "metadata": {
-        "current_version": "1",
-        "date_deployed": 1329538942
-    },
+  "metadata": {
+      "current_version": "1",
+      "date_deployed": 1329538942
+  },
 ````
 
 ### Environments
