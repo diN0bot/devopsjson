@@ -2,15 +2,17 @@
   "name": "Minimum Viable Product",
   "description": "Example of minimum requirements of devops JSON",
   "tags": [],
-  "contacts": {
-    "team_name": "Team 1",
-    "members": [
-      {
-        "name": "Lonely Developer",
-        "sso": "lonely.developer"
-      }
-    ]
-  },
+  "contacts": [
+    {
+      "team_name": "Team 1",
+      "members": [
+        {
+          "name": "Lonely Developer",
+          "sso": "lonely.developer"
+        }
+      ]
+    }
+  ],
   "links": {},
   "environments": [  
     {
@@ -23,8 +25,8 @@
   ],
   "metadata": {
     "current_version": "1",
-    "date_deployed": 1330034242
+    "last_deployed": 1330034242
   },
   "related_apis": {},
-  "dependent_services": [],
+  "dependent_services": []
 }
