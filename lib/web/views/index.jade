@@ -36,10 +36,11 @@ block content
                 ul
                 each val, key in error
                   li #{key}: #{val}
-            div.alert.alert-info
-              a(class="close", data-dismiss="alert", href="#") &times;
-              strong Validated Fields
-              ul
-              each val, key in report.validated
-                li
-                  a(href="#{val}") #{key}
+            if report.validated.length > 0
+              div.alert.alert-info
+                a(class="close", data-dismiss="alert", href="#") &times;
+                strong Validated Fields
+                ul
+                each val, key in report.validated
+                  li
+                    a(href="#{val}") #{key}
