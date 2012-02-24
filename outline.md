@@ -10,7 +10,8 @@ JSON
 
 ## Information Provided
 
-### Name and Description
+### Name (Required), Description (Required) and Tags (Optional)
+
 Should be formatted for display.
 Tags are for Search Engine Optimization
  
@@ -25,11 +26,16 @@ Tags are for Search Engine Optimization
   ],
 ````
 
-### Contacts
+### Contacts (Required)
 
-"Teamname" required
-Teams cannot be empty (must have at least one member)
-Members' "name" and "sso" are required.
+Contacts contains Team objects. At least one team must be provided.
+
+Each Team object contains:
+
+- Teamname (Required)
+- Members (Required) Must contain at least one member
+    - Name and SSO fields are required
+    - Other field names must be valid URI protocols
 
 ````
   "contacts": [
@@ -75,20 +81,21 @@ Members' "name" and "sso" are required.
   ],
 ````
 
-### Links
+### Links (Optional)
+
 Key can be anything, will be URL anchor text. Value must be a URL.
 
 Useful Examples:
 
- * Docs
- * Dashboard
- * Code
- * Monitoring
- * Ticketing / Defects
- * CI System
- * CD System
- * Logs
- * IRC / Chat (http://tools.ietf.org/html/rfc5785)
+* Docs
+* Dashboard
+* Code
+* Monitoring
+* Ticketing / Defects
+* CI System
+* CD System
+* Logs
+* IRC / Chat (http://tools.ietf.org/html/rfc5785)
 
 ````
   "links": {
@@ -105,9 +112,10 @@ Useful Examples:
   },
 ````
 
-### Metadata
- * Current Version of this JSON file
- * date deployed : Changedate of JSON File (POSIX time format)
+### Metadata (Optional)
+
+* Current Version of this JSON file
+* date deployed : Changedate of JSON File (POSIX time format)
 
 ````
   "metadata": {
@@ -116,12 +124,13 @@ Useful Examples:
   },
 ````
 
-### Environments
- * Production, Staging, etc
- * Platform
- * Regions to which the environment is deployed 
- * URL to Environment
-  * Auth is optional, but highly recommended!
+### Environments (Opiontal)
+
+* Production, Staging, etc
+* Platform
+* Regions to which the environment is deployed 
+* URL to Environment
+    * Auth is optional, but highly recommended!
  
 ````
   "environments": [
@@ -141,11 +150,11 @@ Useful Examples:
   ],
 ````
 
-### Related APIs
+### Related APIs (Optional)
 
- * PagerDuty
- * NewRelic
- * Cloud Monitoring
+* PagerDuty
+* NewRelic
+* Cloud Monitoring
 
 ````
     "related_apis": {
@@ -157,7 +166,7 @@ Useful Examples:
     },
 ````
 
-### Dependent Services
+### Dependent Services (Optional)
 
  * Opaque Strings, or, ideally links to a devops.json
  * Auth
@@ -171,12 +180,12 @@ Useful Examples:
         "http://usage.api.example.com/devops.json"
     ],
 ````
-### KPI JSON spec
 
- * Actual values
- * URLs to get actual values (New Relic API url, but lists keys to use against it?)
+### KPI JSON URI (Optional)
+
+* Actual values
+* URLs to get actual values (New Relic API url, but lists keys to use against it?)
 
 ````
  "kpi_spec": "http://beta.example.com/kpi.json"
 ````
-
