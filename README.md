@@ -2,9 +2,25 @@
 
 DevOps JSON defines a [well-known URI](http://tools.ietf.org/html/rfc5785) for DevOps information.
 
-[outline.md](https://github.com/racker/devopsjson/blob/master/outline.md) contains the specification itself.
+## Schema
 
-See also [http://devopsjson.com](http://devopsjson.com)
+[schema](https://github.com/racker/devopsjson/blob/master/lib/web/schema.js) and [outline.md](https://github.com/racker/devopsjson/blob/master/outline.md) contain the specification itself.
+
+## Validator
+
+Public instance: [http://devopsjson.com](http://devopsjson.com)
+
+Or run this app:
+
+```
+git@github.com:racker/devopsjson.git
+cd devopsjson
+./bin/devopsjson
+```
+
+Then visit: http://localhost:3000/
+
+## Vision
 
 The vision of this project is to:
 
