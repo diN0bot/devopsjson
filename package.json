@@ -1,6 +1,6 @@
 {
   "name": "devopsjson",
-  "bin":"./bin/devopsjson",
+  "bin": "./bin/devopsjson",
   "contributors": [
     "Brandon Philips <brandon@ifup.org>",
     "Lucy Mendel <lucy.mendel@rackspace.com>",
@@ -21,5 +21,10 @@
   },
   "engines": {
     "node": ">=0.4.1 <0.7.0"
+  },
+  "subdomain": "devopsjson",
+  "domains": [ "devopsjson.com" ],
+  "scripts": {
+    "start": "bin/devopsjson"
   }
 }
