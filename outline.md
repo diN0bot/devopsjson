@@ -160,8 +160,16 @@ Useful Examples:
     "related_apis": {
         "pager_duty": {
           "subdomain": "example",
-          "schedule_id": "AABBCCD", 
+          "schedule_id": "EDDY42",
+          "port": 80,
           "auth": "user:pass"
+        }
+        "version_one": {
+            "host": "www.v1host.com",
+            "port": 443,
+            "name": "PROJECT",
+            "project": 42,
+            "auth": "user:pass"
         }
     },
 ````
