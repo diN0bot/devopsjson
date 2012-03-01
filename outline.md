@@ -34,7 +34,7 @@ Each Team object contains:
 
 - Teamname (Required)
 - Members (Required) Must contain at least one member
-    - Name and SSO fields are required
+    - The SSO field is required
     - Other field names must be valid URI protocols
 
 ````
