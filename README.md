@@ -18,7 +18,7 @@ cd devopsjson
 ./bin/devopsjson
 ```
 
-Then visit: http://localhost:3000/
+Then visit: [http://localhost:3000/](http://localhost:3000/ )
 
 ## Tests
 
