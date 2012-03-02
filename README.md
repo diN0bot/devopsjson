@@ -20,6 +20,14 @@ cd devopsjson
 
 Then visit: http://localhost:3000/
 
+## Tests
+
+If the schema or examples change, please ensure that the tests still pass:
+
+```
+./bin/tester
+```
+
 ## Vision
 
 The vision of this project is to:
