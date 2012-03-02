@@ -27,6 +27,7 @@
     "devopsjson.com"
   ],
   "scripts": {
-    "start": "bin/devopsjson"
+    "start": "bin/devopsjson",
+    "test": "bin/tester"
   }
 }
