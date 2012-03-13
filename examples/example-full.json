@@ -99,22 +99,25 @@
         "auth": "user:pass"
     },
     "version_one": {
-        "host": "www.v1host.com",
-        "port": 443,
+        "url": "https://www.v1host.com",
         "name": "PROJECT",
         "project": 42,
         "auth": "user:pass"
     },
     "github": {
-        "host": "github.com",
-        "port": 443,
+        "url": "http://github.com",
         "org": "racker",
         "repo": "gutsy",
         "username": "xxx",
         "apikey": "yyy"
+    },
+    "newrelic": {
+        "accountId": "22",
+        "appid": "42",
+        "apikey": "__external__"
     }
   },
- "dependent_services": [
+  "dependent_services": [
     "http://foo.api.example.com/devops.json",
     "http://auth.api.example.com/devops.json",
     "http://usage.api.example.com/devops.json"
