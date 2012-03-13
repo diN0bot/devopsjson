@@ -99,7 +99,8 @@
         "auth": "user:pass"
     },
     "version_one": {
-        "url": "https://www.v1host.com",
+        "host": "www.v1host.com",
+        "port": 443,
         "name": "PROJECT",
         "project": 42,
         "auth": "user:pass"
